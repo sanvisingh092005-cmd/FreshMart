@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+            
+        }
+        nav{
+            display: flex;
+            background-color: grey;
+            justify-content: space-between;
+            height:60px;
+            align-items: center;
+            box-sizing: border-box;
+            padding: 0 50px;
+
+        }
+        .items{
+            display: flex;
+            /* margin: 0% auto; */
+            gap:20px;
+            /* justify-content: space-between; */
+            /* align-items: center; */
+             list-style: none; 
+
+            
+        }
+        .box input{
+             width: 100%;
+            height: 100%;
+            border: none;
+            padding: 0 10px;
+            border-radius: 15px; 
+        }
+        .banner{
+            
+            padding: 50px 50px;
+            box-sizing: border-box;
+            
+           
+        }
+        .banner img{
+            height: 400px;
+           width: 100%;
+            /* object-fit: cover; */
+            border-radius: 10px;
+        }
+        li:hover{
+            color:darkkhaki;
+            cursor: pointer;
+            font-size: x-large;
+        }
+        .trending-products{
+            background-color: rgb(170, 241, 98);
+            padding: 50px 50px;
+            box-sizing: border-box;
+            height: 400px;
+            width: 100%;
+
+            
+        }
+        .trending-product-items{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:10px;
+            height: 100px;
+            /* width: 100px; */
+        }
+        .card{
+            background-color: bisque;
+            height: 300px;
+            width: auto;
+        }
+        .category{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding:0 50px;
+            /* gap: 20px; */
+    
+        }
+        .cat img{
+            height: 70px;
+            width: 70px;
+        }
+        .category :hover{
+            cursor: pointer;
+            width: 110px;
+            height: 110px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav> 
+            <div class="logo">Fresh<span>Mart</span></div>
+            <div class="box"><input type="search"  placeholder="Search"></div>
+            <div class="items">
+                <li>Home</li>
+                <li>Product</li>
+                <li>Cart</li>
+                <li>Contacts</li>
+            </div>
+        </nav>
+        <div class="banner">
+            <img src="images/images.jfif" alt="banner image">
+        </div>
+        <div class="category">
+            <div class="cat">
+
+            </div>
+            <div class="cat">
+                <img src="images/fruits.png" alt="">
+                <h3>FRUITS</h3>
+            </div>
+            <div class="cat">
+                <img src="images/vegetable.png" alt="">
+                <h3>VEGETABLES</h3>
+            </div>
+            <div class="cat">
+                <img src="images/colddrink.png" alt="">
+                <H3>BEVERAGES</H3>
+            </div>
+            <div class="cat">
+                <img src="images/cookinng.png" alt="">
+                <H3>COOKING</H3>
+            </div>
+            <div class="cat">
+                <img src="images/cheeze.png" alt="">
+                <H3>DAIRY <BR> PRODUCTS</H3>
+            </div>
+            <div class="cat">
+                <img src="images/grains.png" alt="">
+                <H3>GRAINS</H3>
+            </div>
+            <div class="cat">
+                <img src="images/chips.jfif" alt="">
+                <H3>SNACKS</H3>
+            </div>
+            <div class="cat">
+                <img src="images/spiecs.png" alt="">
+                <H3>SPICES</H3>
+            </div>
+            <div class="cat">
+                <img src="images/bread.png" alt="">
+                <H3>BACKERY <BR> PRODUCTS</H3>
+            </div>
+        </div>
+        <div class="trending-products">
+            <h2>Trending Products</h2>
+            <div class="trending-product-items">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
